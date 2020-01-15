@@ -17,7 +17,7 @@ const LoginDialog = ({active, onClickOutside}: {
       active={active}
       onClickOutside={onClickOutside}>
       <GoogleLogin
-        clientId="845112702064-d08imkfg62l9c86rejkmnug8nia0i03j.apps.googleusercontent.com"
+        clientId={process.env.REACT_APP_GOOGLE_KEY}
         buttonText="Sign in with Google"
         onSuccess={userService.onAuthCallback}
         onFailure={userService.onAuthCallback}

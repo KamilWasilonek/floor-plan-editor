@@ -6,7 +6,7 @@ import "../utils/firebase";
 import { IRootService } from "./root-sevice.interface";
 import { UserService } from "./user.service";
 
-const endpoint = process.env.API_URL;
+const endpoint = process.env.REACT_APP_ENDPOINT;
 
 export class FloorProvider implements IRootService {
   public userService: UserService;
